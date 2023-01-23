@@ -1,1 +1,0 @@
-(sum + kadanes(arr, n)) 
