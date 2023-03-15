@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+
 int minDiff(int arr[],int n){
     int res = arr[1]-arr[0];
     int minValue = arr[0];

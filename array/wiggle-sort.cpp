@@ -17,7 +17,7 @@ int main()
     while (start < end)
     {
         arr2[j] = arr[start];
-        arr[j + 1] = arr[end];
+        arr2[j + 1] = arr[end];
         start++;
         end--;
         j += 2;
