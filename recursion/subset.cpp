@@ -43,24 +43,27 @@ string binary(string s, int n)
     reverse(bin.begin(), bin.end());
     while (bin.length() < s.length())
     {
-        bin="0"+bin;
+        bin = "0" + bin;
     }
     return bin;
 }
 
-
-void subsets(string s){
-    for(int i=0;i<=pow(2,s.length())-1;i++){
-       string bin = binary(s,i);
-       for(int i=0;i<s.length();i++){
-        if(bin[i]=='1'){
-            cout<<s[i];
+void subsets(string s)
+{
+    for (int i = 0; i <= pow(2, s.length()) - 1; i++)
+    {
+        string bin = binary(s, i);
+        for (int i = 0; i < s.length(); i++)
+        {
+            if (bin[i] == '1')
+            {
+                cout << s[i];
+            }
         }
-       }
-       cout<<"\n";
+        cout << "\n";
     }
 }
 int main()
 {
-  
+    subsets("abcd");
 }

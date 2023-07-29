@@ -38,6 +38,6 @@ vector<int> partitionLabels(string s)
 }
 int main()
 {
-    string s = "caedbdedda";
+    string s = "caedbdeddaffg";
     partitionLabels(s);
 }

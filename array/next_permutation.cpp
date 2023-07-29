@@ -22,7 +22,6 @@ string nextPermutation(string s)
         }
         i--;
     }
-    cout << "i : " << i << endl;
     if (i < 0)
     {
         return "";
